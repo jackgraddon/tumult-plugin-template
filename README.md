@@ -39,7 +39,7 @@ publishes what Tumult installs.
 | `tumult.plugin.json` | the release manifest — id, permissions, `entry`, and (once released) `integrity`. Validated against `tumult.plugin.schema.json`. |
 | `src/index.ts` | your plugin: a manifest and `install(ctx)`. The template's example is a `/shrug` command. |
 | `src/shims/vue.ts` | the `vue` your bundle builds against — see below. |
-| `types/plugin.d.ts` | the whole plugin API, vendored so you need no Tumult packages installed. |
+| `types/plugin.d.ts` | the whole plugin API, vendored so you need no Tumult packages installed. **Generated** in the Tumult repo — do not edit it here. |
 | `esbuild.config.mjs` | the bundle step. |
 | `scripts/make-release-manifest.mjs` | computes `integrity` for the built bundle. |
 | `.github/workflows/release.yml` | tag → build → hash → release. |
